@@ -1,0 +1,11 @@
+{
+  "reflection": [
+    {
+      "condition": {
+        "typeReached": "com.oracle.svm.test.ConditionalSerializationRecordTest"
+      },
+      "type": "com.oracle.svm.test.ConditionalSerializationRecordTest$Point",
+      "serializable": true
+    }
+  ]
+}

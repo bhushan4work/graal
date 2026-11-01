@@ -578,7 +578,7 @@ final class SerializationBuilder extends ConditionalConfigurationRegistry implem
              * component accessor methods for reflection ensures that the record components are
              * available at run time.
              */
-            ImageSingletons.lookup(RuntimeReflectionSupport.class).registerAllRecordComponentsQuery(cnd, serializationTargetClass);
+            ImageSingletons.lookup(RuntimeReflectionSupport.class).registerAllRecordComponentsQuery(ConfigurationCondition.alwaysTrue(), serializationTargetClass);
             try {
                 /* Serialization for records uses the canonical record constructor directly. */
                 Executable[] methods = new Executable[]{RecordUtils.getCanonicalRecordConstructor(serializationTargetClass)};
